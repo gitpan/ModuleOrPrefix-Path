@@ -1,0 +1,48 @@
+NAME
+    ModuleOrPrefix::Path - Get the full path to a locally installed module
+    or prefix
+
+VERSION
+    version 0.01
+
+SYNOPSIS
+     use ModuleOrPrefix::Path qw(module_or_prefix_path);
+
+     say module_or_prefix_path('Test::More');  # "/path/to/Test/More.pm"
+     say module_or_prefix_path('Test');        # "/path/to/Test.pm"
+     say module_or_prefix_path('File::Slurp'); # "/path/to/File/Slurp.pm"
+     say module_or_prefix_path('File');        # "/path/to/File/"
+     say module_or_prefix_path('Foo');         # undef
+
+DESCRIPTION
+    The code is based on Neil Bower's Module::Path.
+
+FUNCTIONS
+  module_or_prefix_path($mod) => STR
+SEE ALSO
+    Module::Path
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/ModuleOrPrefix-Path>.
+
+SOURCE
+    Source repository is at
+    <https://github.com/sharyanto/perl-ModuleOrPrefix-Path>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=ModuleOrPrefix-Path>
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2014 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
